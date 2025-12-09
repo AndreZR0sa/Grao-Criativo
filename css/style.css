@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Fundo, #D9BD89);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: var(--Menus, #A68965);
+    align-items: center;
+}
+
+.div-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.div-imagem1{
+    width: 100%;
+}
