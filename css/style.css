@@ -6,6 +6,7 @@
 
 body{
     background: var(--Fundo, #D9BD89);
+    font-family: "Sen";
 }
 
 header{
@@ -13,17 +14,150 @@ header{
     justify-content: space-between;
     background: var(--Menus, #A68965);
     align-items: center;
+    color: var(--Texto-2, #F2E8DC);
+    padding: 5px 5px;
 }
 
 .div-titulo{
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.div-titulo img{
+    width: 25%;
+
+}
+
+.div-titulo h1{
+    font-size: 20px;
 }
 
 .nav-menu{
     display: none;
 }
 
-.div-imagem1{
+.container{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.cima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.div-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-intro h2{
+    font-size: 20px;
+}
+
+.div-intro p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.div-image1 img{
+    width: 100%;
+}
+
+.cardapioIr{
+    display: flex;
+    width: 50%;
+    height: 30px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: var(--Botes, #260101);
+    color: var(--Texto-2, #F2E8DC);
+}
+
+.baixo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.div-sobre{
+    font-size: 16px;
+}
+
+.div-sobreI img{
+    width: 100%;
+}
+
+footer{
+    background: var(--Menus, #A68965);
+    color: var(--Texto-2, #F2E8DC);
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 768px){
+    body{
+        font-size: 25px;
+    }
+    .div-titulo{
+        gap: 20px;
+    }
+    .div-titulo img{
+        width: 40%;
+    }
+    .div-titulo h1{
+        font-size: 40px;
+    }
+    .div-menu{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+    }
+    .nav-itens{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    .container{
+        padding: 20px 100px;
+        gap: 20px;
+    }
+    .cima{
+        gap: 20px;
+    }
+    .div-intro h2{
+        font-size: 40px;
+    }
+    .cardapioIr{
+        font-size: 30px;
+        height: 50px;
+    }
+    .div-sobre-geral{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .div-sobre{
+        width: 50%;
+        font-size: 25px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        height: 80px;
+    }
 }
