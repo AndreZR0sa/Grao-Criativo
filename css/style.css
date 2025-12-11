@@ -19,6 +19,36 @@ header{
     padding: 5px 5px;
 }
 
+.div-menu button{
+    background: none;
+    border: none;
+    color: var(--Texto-2, #F2E8DC);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.oculto{
+    display: none;
+}
+
+.visivel {
+    display: flex;
+    flex-direction: column;
+    background: var(--Menus, #A68965);
+    color: var(--Texto-2, #F2E8DC);
+    text-align: center;
+}
+
+.visivel a{
+    text-decoration: none;
+    color: var(--Texto-2, #F2E8DC);
+    font-size: 20px;
+}
+
+.visivel a:hover{
+    color: var(--Texto-1, #260101);
+}
+
 /* pag 1 */
 .div-titulo{
     display: flex;
@@ -125,6 +155,32 @@ header{
     gap: 10px;
 }
 /* end pag 2 */
+/* pag 3 */
+.cimaS, .meioS, .baixoS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.galeriaIr{
+    display: flex;
+    width: 40%;
+    height: 40px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: var(--Botes, #260101);
+    color: var(--Texto-2, #F2E8DC);
+}
+
+.galeriaIr:hover{
+    background: var(--Menus, #A68965);
+    color: var(--Texto-1, #260101);
+    cursor: pointer;
+}
+/* end pag 3 */
 
 footer{
     background: var(--Menus, #A68965);
@@ -168,6 +224,9 @@ footer{
     .nav-itens a:hover{
         color: var(--Texto-1, #260101);
     }
+    .visivel{
+        display: none;
+    }
     /* pag 1 */
     .container{
         padding: 20px 100px;
@@ -209,6 +268,21 @@ footer{
         gap: 15px;
     }
     /* end pag 2 */
+    /* pag 3 */
+    .cimaS, .meioS, .baixoS{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .cardapioIr{
+        font-size: 30px;
+        height: 50px;
+    }
+    /* end pag 3 */
     footer{
         display: flex;
         justify-content: center;
