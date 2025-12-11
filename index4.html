@@ -9,23 +9,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <!-- Cabeça -->
     <header>
         <div class="div-titulo">
             <img src="image/logo.png" alt="logo">
             <h1>Grão Criativo</h1>
         </div>
-        
-        </div>
+
         <div class="div-menu" id="link" onclick="links()">
             <button><i class="fa-solid fa-bars"></i></button>
         </div>
+
         <nav class="nav-menu">
             <ul class="nav-itens">
                 <li class="nav-item"><a href="index.html">Home</a></li>
@@ -35,35 +38,71 @@
             </ul>
         </nav>
     </header>
+
     <div id="toast" class="oculto">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index2.html">Cardápio</a></li>
-                <li><a href="index3.html">Galeria</a></li>
-                <li><a href="index4.html">Contato</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Cardápio</a></li>
+            <li><a href="index3.html">Galeria</a></li>
+            <li><a href="index4.html">Contato</a></li>
+        </ul>
+    </div>
+
     <!-- Corpo -->
+    <section class="section-titulo">
+        <h2>Você é artista?</h2>
+        <h3>Entre em contato conosco</h3>
+    </section>
+
+    <section class="section-form">
+        <div class="esquerda">
+            <form action="">
+                <fieldset>
+                    <label for="name" id="nome">Nome:</label>
+                    <input type="text" id="name" name="name" required placeholder="Nome completo">
+
+                    <label for="email" id="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+
+                    <label for="telefone" id="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" required placeholder="(xx) xxxx-xxxx">
+
+                    <label for="portfolio" id="porti">Link do portfólio:</label>
+                    <input type="url" id="portfolio" name="portfolio" required placeholder="www.seusite.com">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="direita">
+            <form action="">
+                <label for="mensagem" id="mensagem">Mensagem:</label>
+                <br>
+                <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem aqui..."></textarea>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-enviar">
+        <button class="enviar" id="sendForm" onclick="enviar()">Enviar</button>
+    </section>
+
     <!-- Pé -->
     <footer>
         <div class="div-location">
             <i class="fa-solid fa-location-pin"></i>
-            <span>
-                Rua da Aquarela, 192 - Vila Madalena, SP
-            </span>
+            <span>Rua da Aquarela, 192 - Vila Madalena, SP</span>
         </div>
         <div class="div-phone">
             <i class="fa-solid fa-phone"></i>
-            <span>
-                (11) 99786-0127
-            </span>
+            <span>(11) 99786-0127</span>
         </div>
         <div class="div-insta">
             <i class="fa-brands fa-instagram"></i>
-            <span>
-                @graocriativo.cafe
-            </span>
+            <span>@graocriativo.cafe</span>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>

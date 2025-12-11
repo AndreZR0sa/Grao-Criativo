@@ -181,6 +181,76 @@ header{
     cursor: pointer;
 }
 /* end pag 3 */
+/* pag 4 */
+.section-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-titulo h2{
+    font-size: 30px;
+}
+
+.section-titulo h3{
+    font-size: 25px;
+}
+
+.section-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    font-size: 20px;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.section-form input, .section-form textarea{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.section-enviar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.enviar{
+    display: flex;
+    width: 30%;
+    height: 40px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: var(--Botes, #260101);
+    color: var(--Texto-2, #F2E8DC);
+}
+
+.enviar:hover{
+    background: var(--Menus, #A68965);
+    color: var(--Texto-1, #260101);
+    cursor: pointer;
+}
+
+.section-titulo, .section-form, .section-enviar{
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+/* end pag 4 */
 
 footer{
     background: var(--Menus, #A68965);
@@ -214,13 +284,11 @@ footer{
         gap: 20px;
         font-size: 30px;
     }
-
     .nav-itens a{
         text-decoration: none;
         color: var(--Texto-2, #F2E8DC);
         font-size: 20px;
     }
-
     .nav-itens a:hover{
         color: var(--Texto-1, #260101);
     }
@@ -283,6 +351,42 @@ footer{
         height: 50px;
     }
     /* end pag 3 */
+    /* pag 4 */
+    .section-titulo h2{
+        font-size: 40px;
+    }
+    .section-titulo h3{
+        font-size: 30px;
+    }
+    .section-form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        font-size: 20px;
+    }
+    fieldset{
+        width: 25%;
+        gap: 15px;
+    }
+    .section-form input, .section-form textarea{
+        width: 300px;
+        height: 60px;
+    }
+    .section-form textarea{
+        height: 120px;
+    }
+    .enviar{
+        font-size: 25px;
+        height: 50px;
+    }
+    .section-titulo, .section-form, .section-enviar{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    }
+    /* end pag 4 */
     footer{
         display: flex;
         justify-content: center;

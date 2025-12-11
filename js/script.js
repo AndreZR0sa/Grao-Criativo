@@ -22,3 +22,12 @@ link.addEventListener('click', () => {
     toast.classList.toggle('visivel');
     toast.classList.toggle('oculto');
 })
+
+function  enviar(){
+    if(document.getElementById("nome").value == "" || document.getElementById("email").value == "" || document.getElementById("telefone").value =="" || document.getElementById("porti").value == "" || document.getElementById("mensagem").value == ""){
+        alert("Por favor, preencha todos os campos.");
+    }
+    else{
+        alert("Mensagem enviada com sucesso!");
+    }
+}
