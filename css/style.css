@@ -7,6 +7,7 @@
 body{
     background: var(--Fundo, #D9BD89);
     font-family: "Sen";
+    color: var(--Texto-1, #260101);
 }
 
 header{
@@ -18,6 +19,7 @@ header{
     padding: 5px 5px;
 }
 
+/* pag 1 */
 .div-titulo{
     display: flex;
     align-items: center;
@@ -41,7 +43,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     gap: 10px;
 }
 
@@ -83,6 +85,12 @@ header{
     color: var(--Texto-2, #F2E8DC);
 }
 
+.cardapioIr:hover{
+    background: var(--Menus, #A68965);
+    color: var(--Texto-1, #260101);
+    cursor: pointer;
+}
+
 .baixo{
     display: flex;
     flex-direction: column;
@@ -97,6 +105,26 @@ header{
 .div-sobreI img{
     width: 100%;
 }
+/* end pag 1 */
+/* pag 2 */
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardapio h3{
+    font-size: 20px;
+}
+
+.cafe-es, .criacao, .acompanhar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+/* end pag 2 */
 
 footer{
     background: var(--Menus, #A68965);
@@ -128,7 +156,19 @@ footer{
         list-style: none;
         display: flex;
         gap: 20px;
+        font-size: 30px;
     }
+
+    .nav-itens a{
+        text-decoration: none;
+        color: var(--Texto-2, #F2E8DC);
+        font-size: 20px;
+    }
+
+    .nav-itens a:hover{
+        color: var(--Texto-1, #260101);
+    }
+    /* pag 1 */
     .container{
         padding: 20px 100px;
         gap: 20px;
@@ -153,6 +193,22 @@ footer{
         width: 50%;
         font-size: 25px;
     }
+    /* end pag 1 */
+    /* pag 2 */
+    .cardapio{
+        gap: 50px;
+    }
+    .cardapio h3{
+        font-size: 30px;
+    }
+    .cafe-es, .criacao, .acompanhar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    /* end pag 2 */
     footer{
         display: flex;
         justify-content: center;
